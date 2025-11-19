@@ -4,7 +4,7 @@ import { SpotifyService } from 'src/app/services/spotify.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'] 
 })
 export class LoginComponent implements OnInit {
 
@@ -13,8 +13,8 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  clicar() {
-    
+  abrirPaginaLogin() {
+    console.log(this.spotifyService.obterUrlLogin());
   }
 
 }
